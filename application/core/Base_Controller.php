@@ -13,6 +13,7 @@ class Base_Controller extends CI_Controller
 //            'cache' => '/path/to/compilation_cache',
         ));
 
+        $this->load->library('Doctrine', true, 'doctrine');
     }
 
 }
