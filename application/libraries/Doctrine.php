@@ -3,6 +3,10 @@
 use Doctrine\ORM\Tools\Setup;
 use Doctrine\ORM\EntityManager;
 
+/**
+ * Class Doctrine
+ * @property EntityManager $em
+ */
 class Doctrine
 {
     public $em;
@@ -57,6 +61,9 @@ class Doctrine
 //        $loader->register();
     }
 
+    /**
+     * @param string $class
+     */
     public function autoLoad($class) {
         if ((strpos($class, 'CI_') === 0) || (strpos($class, 'Base_') === 0)) {
             return;
@@ -66,6 +73,9 @@ class Doctrine
         }
     }
 
+    /**
+     * @return EntityManager
+     */
     public function getEntityManager() {
         return $this->em;
     }
