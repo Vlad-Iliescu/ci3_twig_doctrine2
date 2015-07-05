@@ -5,7 +5,8 @@
 	"require": {
 		"php": ">=5.2.4",
 		"twig/twig": "~1.0",
-        "doctrine/orm": "2.6.*@dev"
+        "doctrine/orm": "2.6.*@dev",
+        "maximebf/debugbar": "1.*"
 	},
 	"require-dev": {
 		"mikey179/vfsStream": "1.1.*"

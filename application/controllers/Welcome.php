@@ -19,6 +19,6 @@ class Welcome extends Base_Controller {
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
 	public function index() {
-        $this->twig->display('index.twig');
+        $this->twig->display('welcome/index.twig');
     }
 }
